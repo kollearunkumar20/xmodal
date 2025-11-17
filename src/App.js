@@ -23,7 +23,9 @@ function App() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     const { username, email, dob, phone } = formData;
 
     if (email && !email.includes("@")) {
@@ -65,43 +67,30 @@ function App() {
       {showModal && (
         <div className="modal" onClick={handleBackgroundClick}>
           <div className="modal-content">
+
             <h2 className="form-title">Fill Details</h2>
 
-            <label>Username:</label>
-            <input
-              id="username"
-              type="text"
-              value={formData.username}
-              onChange={handleChange}
-            />
+            <form onSubmit={handleSubmit}>
+              <label>Username:</label>
+              <input id="username" type="text"
+                value={formData.username} onChange={handleChange} />
 
-            <label>Email Address:</label>
-            <input
-              id="email"
-              type="text"
-              value={formData.email}
-              onChange={handleChange}
-            />
+              <label>Email Address:</label>
+              <input id="email" type="text"
+                value={formData.email} onChange={handleChange} />
 
-            <label>Phone Number:</label>
-            <input
-              id="phone"
-              type="text"
-              value={formData.phone}
-              onChange={handleChange}
-            />
+              <label>Phone Number:</label>
+              <input id="phone" type="text"
+                value={formData.phone} onChange={handleChange} />
 
-            <label>Date of Birth:</label>
-            <input
-              id="dob"
-              type="date"
-              value={formData.dob}
-              onChange={handleChange}
-            />
+              <label>Date of Birth:</label>
+              <input id="dob" type="date"
+                value={formData.dob} onChange={handleChange} />
 
-            <button className="submit-button" onClick={handleSubmit}>
-              Submit
-            </button>
+              <button type="submit" className="submit-button">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       )}
