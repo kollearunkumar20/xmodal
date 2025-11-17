@@ -1,0 +1,84 @@
+body {
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin-top: 40px;
+  color: #111;
+}
+
+h1 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+
+.open-btn {
+  background: #1646a3;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 460px;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.32);
+}
+
+.form-title {
+  font-size: 28px;
+  margin-bottom: 26px;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.submit-button {
+  background: #1a6df0;
+  color: white;
+  border: none;
+  margin-top: 26px;
+  padding: 11px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background: #0c5ad8;
+}
