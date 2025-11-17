@@ -6,7 +6,6 @@ body {
 .container {
   text-align: center;
   margin-top: 40px;
-  color: #111;
 }
 
 h1 {
@@ -61,7 +60,7 @@ label {
 
 input {
   width: 100%;
-  padding: 11px 14px;
+  padding: 11px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 15px;
